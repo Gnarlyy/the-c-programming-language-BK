@@ -28,4 +28,27 @@ main()
         printf("%3.0f %6.1f\n", fahr, celsius);
         fahr = fahr + step;
     }
+
+    // creating the same program with a for loop
+    /* changes made to print in reverse order:
+       fahr_for changed to max number of 300
+       comparison changed to greater than or equal to zero
+       and increment changed to subtraction (fahr_for - 20) */
+
+    printf("\n Fahrenheit to Celsius Table with a For loop\n");
+    int fahr_for;
+
+    for (fahr_for = 300; fahr_for >= 0; fahr_for = fahr_for - 20)
+        printf("%3d %6.1f\n", fahr_for, (5.0/9.0)*(fahr_for-32));
+
+    /* symbolic constants:
+       #define name - for example:
+       #define  LOWER   0
+       #define  UPPER   300
+       #define  STEP    20
+       this creates a readily distinguished
+       name from lower case variable names */
+
+
 }
+
